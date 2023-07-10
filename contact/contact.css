@@ -1,0 +1,225 @@
+/* CSS Styling for the About Us page */
+/* Body styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+}
+
+.active {
+    font-weight: 700;
+}
+
+b,
+i {
+    font-size: 1.3rem;
+    color: orangered;
+}
+
+/* Header styles */
+
+header .navbar,
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navbar h1 {
+    color: orangered;
+    margin-left: 12rem;
+    font-size: 2rem;
+    font-weight: 100;
+    transition: transform 0.3s ease;
+}
+
+header .navbar a {
+    text-decoration: none;
+}
+
+header .navbar ul {
+    list-style-type: none;
+    margin-right: 10rem;
+}
+
+.navbar li a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.navbar li a:hover,
+h1:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: green;
+}
+
+/* Main styles */
+
+main {
+    margin: 0 10rem;
+}
+
+.contact-section {
+    /* background-color: rgba(0, 0, 0, 0); */
+    border-radius: 1rem;
+}
+
+.contact-section h2 {
+    color: orangered;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+
+label {
+    border: 1px solid #e6e6e6;
+    font-family: 'HelveticaNeueLTCom-Th';
+    width: 49%;
+    margin-right: 0.5%;
+    line-height: 50px;
+    height: 50px;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: inline-block;
+    /* float: left; */
+    padding-left: 15px;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 1%;
+    border: 1px solid #e6e6e6;
+    /* border: 1px solid black; */
+}
+
+label {
+    font-weight: 100;
+    font-family: "Poppins", sans-serif;
+    /* margin-bottom: 0.5rem; */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 0.5rem;
+    border: none;
+    width: 75%;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+button[type="submit"] {
+    height: 3.5rem;
+    width: 8rem;
+    color: green;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 3rem;
+    border: none;
+    padding: 0 .7rem;
+    transition: transform 0.5s ease;
+}
+
+button[type="submit"]:hover {
+    transform: scale(1.1);
+    background-color: black;
+    cursor: pointer;
+}
+
+/* Footer styles */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: orangered;
+    /* Background color of the footer */
+    color: #333;
+    /* Text color of the footer */
+    font-family: Arial, sans-serif;
+    animation: fadeIn 1s ease;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer-nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    animation: slideIn 1s ease;
+}
+
+footer .footer-nav li {
+    margin-right: 15px;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+
+footer .footer-nav a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    z-index: 1;
+}
+
+footer .footer-nav li {
+    list-style-type: none;
+}
+
+footer .footer-nav li::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: yellow;
+    /* Color of the line beneath the footer links */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+footer .footer-nav li:hover::after {
+    transform: scaleX(1);
+}
+
+footer .footer-social a {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-left: 10px;
+    border: none;
+    transition: transform 0.3s ease;
+    animation: scaleIn 1s infinite alternate;
+}
+
+footer .footer-social a:hover {
+    transform: scale(1.1);
+}
+
+footer .footer-social a.facebook {
+    background-image: url("../res/images/icons/icons8-facebook-96.svg");
+}
+
+footer .footer-social a.instagram {
+    background-image: url("../res/images/icons/icons8-instagram.svg");
+}
